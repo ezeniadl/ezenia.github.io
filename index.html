@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root {
+  --ink: #2A2016;
+  --ink-mid: #5C4A2A;
+  --ink-soft: #8A7355;
+  --ink-muted: #B0996E;
+  --cream: #F7F2E8;
+  --cream-warm: #EFE7D4;
+  --cream-deep: #E3D6BE;
+  --sage: #6B8060;
+  --sage-light: #9EAF92;
+  --sage-pale: #DCE8D6;
+  --rust: #9B4F2A;
+  --rust-pale: #F0E0D4;
+  --border: rgba(90,65,30,0.12);
+  --border-mid: rgba(90,65,30,0.22);
+  --serif: 'Lora', Georgia, serif;
+  --mono: 'IBM Plex Mono', monospace;
+  --sans: 'Source Sans 3', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans);
+  background: var(--cream);
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(107,128,96,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(107,128,96,0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* NAV */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(247,242,232,0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2.5rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 54px;
+}
+.nav-logo {
+  font-family: var(--mono);
+  font-size: 13px; font-weight: 500;
+  color: var(--ink); text-decoration: none; letter-spacing: -0.3px;
+}
+.nav-logo span { color: var(--sage); }
+.nav-links { display: flex; gap: 1.75rem; list-style: none; }
+.nav-links a {
+  font-size: 12.5px; font-weight: 400;
+  color: var(--ink-soft); text-decoration: none;
+  letter-spacing: 0.3px; font-family: var(--sans);
+  transition: color 0.18s;
+}
+.nav-links a:hover { color: var(--ink); }
+
+/* HERO */
+.hero {
+  position: relative; z-index: 1;
+  padding: 5.5rem 2.5rem 4rem;
+  max-width: 860px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 220px;
+  gap: 3rem; align-items: start;
+}
+.hero-eyebrow {
+  font-family: var(--mono);
+  font-size: 11px; color: var(--sage);
+  letter-spacing: 1.5px; margin-bottom: 1.25rem;
+  text-transform: uppercase;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 400; line-height: 1.2;
+  color: var(--ink); margin-bottom: 1.25rem;
+  letter-spacing: -0.5px;
+}
+.hero h1 em { font-style: italic; color: var(--sage); }
+.hero-bio {
+  font-size: 15.5px; color: var(--ink-mid);
+  line-height: 1.85; max-width: 460px; margin-bottom: 2.25rem;
+}
+.hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.btn-primary {
+  background: var(--ink); color: var(--cream);
+  border: none; padding: 9px 22px;
+  border-radius: 6px; font-family: var(--sans);
+  font-size: 13px; font-weight: 500; cursor: pointer;
+  text-decoration: none; transition: background 0.18s;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--ink-mid); }
+.btn-ghost {
+  background: transparent; color: var(--ink-mid);
+  border: 1px solid var(--border-mid); padding: 9px 22px;
+  border-radius: 6px; font-family: var(--sans);
+  font-size: 13px; cursor: pointer; text-decoration: none;
+  transition: all 0.18s; display: inline-block;
+}
+.btn-ghost:hover { border-color: var(--sage); color: var(--sage); }
+
+/* AVATAR */
+.avatar-wrap { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+.avatar-frame {
+  width: 190px; height: 220px;
+  border: 1.5px solid var(--border-mid);
+  border-radius: 8px;
+  background: var(--cream-warm);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.avatar-frame::before {
+  content: '';
+  position: absolute; inset: 8px;
+  border: 1px dashed var(--border-mid); border-radius: 4px;
+}
+/* To use a photo instead: replace the .avatar-initials span with:
+   <img src="photo.jpg" alt="Your Name" style="width:100%;height:100%;object-fit:cover;position:relative;z-index:1;">
+   and remove the ::before pseudo-element styles above */
+.avatar-initials {
+  font-family: var(--serif); font-size: 52px;
+  font-weight: 400; font-style: italic;
+  color: var(--ink-muted); position: relative; z-index: 1;
+}
+.avatar-caption {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--ink-muted); letter-spacing: 0.8px; text-align: center;
+}
+
+/* SECTIONS */
+section {
+  position: relative; z-index: 1;
+  max-width: 860px; margin: 0 auto;
+  padding: 3.5rem 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.section-label {
+  font-family: var(--mono); font-size: 10.5px;
+  text-transform: uppercase; letter-spacing: 2px;
+  color: var(--sage); margin-bottom: 2rem;
+  display: flex; align-items: center; gap: 8px;
+}
+.section-label::after {
+  content: ''; flex: 1; height: 1px; background: var(--border);
+}
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 5fr 3fr; gap: 3.5rem; }
+.about-text p { color: var(--ink-mid); font-size: 15px; line-height: 1.9; margin-bottom: 1.1rem; }
+.about-text p:last-child { margin-bottom: 0; }
+.sidebar-block { margin-bottom: 1.75rem; }
+.sidebar-block h4 {
+  font-family: var(--mono); font-size: 10px;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--ink-muted); margin-bottom: 0.6rem;
+}
+.chip-group { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip {
+  font-size: 11px; font-weight: 400;
+  background: var(--cream-deep); color: var(--ink-mid);
+  border: 1px solid var(--border);
+  padding: 3px 9px; border-radius: 4px;
+  font-family: var(--mono); letter-spacing: 0.2px;
+}
+.chip.sage { background: var(--sage-pale); color: var(--sage); border-color: rgba(107,128,96,0.2); }
+.chip.rust { background: var(--rust-pale); color: var(--rust); border-color: rgba(155,79,42,0.2); }
+
+/* PROJECTS */
+.projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.project-card {
+  background: var(--cream-warm);
+  border: 1px solid var(--border);
+  border-radius: 8px; padding: 1.4rem;
+  text-decoration: none; display: block;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+  border-color: var(--sage-light);
+  box-shadow: 0 2px 12px rgba(107,128,96,0.1);
+}
+.project-type {
+  font-family: var(--mono); font-size: 9.5px;
+  text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--ink-muted); margin-bottom: 0.6rem;
+}
+.project-card h3 {
+  font-family: var(--serif); font-size: 1.05rem;
+  font-weight: 500; color: var(--ink);
+  margin-bottom: 0.4rem; line-height: 1.3;
+}
+.project-card p { font-size: 13px; color: var(--ink-soft); line-height: 1.65; }
+.project-chips { display: flex; gap: 4px; flex-wrap: wrap; margin-top: 1rem; }
+.p-chip {
+  font-family: var(--mono); font-size: 9.5px;
+  background: rgba(42,32,22,0.06); color: var(--ink-soft);
+  padding: 2px 7px; border-radius: 3px;
+}
+
+/* PODCAST */
+.podcast-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; }
+.podcast-info h3 {
+  font-family: var(--serif); font-size: 1.45rem;
+  font-weight: 400; font-style: italic;
+  color: var(--ink); margin-bottom: 0.6rem;
+}
+.podcast-info p { font-size: 14px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 1.25rem; }
+
+/* Replace .spotify-box below with your actual Spotify <iframe> embed.
+   Go to Spotify → your show → Share → Embed Podcast → copy the iframe code.
+   Paste it in place of the entire <div class="spotify-box">...</div> block.
+   Recommended iframe attrs: width="100%" height="152" style="border-radius:10px" */
+.spotify-box {
+  background: var(--cream-warm);
+  border: 1px solid var(--border-mid);
+  border-radius: 10px; padding: 1.75rem;
+  text-align: center;
+}
+.sp-logo {
+  width: 42px; height: 42px;
+  background: #1DB954; border-radius: 50%;
+  margin: 0 auto 0.75rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.sp-logo svg { fill: white; }
+.spotify-box h4 {
+  font-family: var(--serif); font-size: 1rem;
+  font-weight: 500; color: var(--ink); margin-bottom: 0.3rem;
+}
+.spotify-box p { font-size: 11.5px; color: var(--ink-muted); margin-bottom: 1rem; }
+.sp-embed-note {
+  font-family: var(--mono); font-size: 10px;
+  color: var(--sage); background: var(--sage-pale);
+  padding: 6px 10px; border-radius: 4px;
+  display: inline-block;
+}
+
+/* BLOG */
+.blog-list { display: flex; flex-direction: column; }
+.blog-item {
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--border);
+  display: grid; grid-template-columns: 72px 1fr auto;
+  gap: 1.25rem; align-items: baseline;
+  cursor: pointer; text-decoration: none;
+}
+.blog-item:first-child { border-top: 1px solid var(--border); }
+.blog-item:hover .blog-title { color: var(--sage); }
+.blog-date {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--ink-muted); white-space: nowrap;
+}
+.blog-title {
+  font-family: var(--serif); font-size: 1rem;
+  font-weight: 400; color: var(--ink);
+  margin-bottom: 0.2rem; transition: color 0.18s; display: block;
+}
+.blog-sub { font-size: 12.5px; color: var(--ink-muted); }
+.blog-tag {
+  font-family: var(--mono); font-size: 9.5px;
+  text-transform: uppercase; letter-spacing: 1px;
+  background: var(--cream-deep); color: var(--ink-soft);
+  padding: 3px 8px; border-radius: 3px; white-space: nowrap;
+}
+.blog-more { margin-top: 1.5rem; }
+
+/* RESUME */
+.resume-card {
+  background: var(--cream-warm);
+  border: 1px solid var(--border-mid);
+  border-radius: 8px; padding: 1.75rem 2rem;
+  display: flex; align-items: center;
+  justify-content: space-between; gap: 2rem;
+}
+.resume-left h3 {
+  font-family: var(--serif); font-size: 1.3rem;
+  font-weight: 400; color: var(--ink); margin-bottom: 0.3rem;
+}
+.resume-left p { font-size: 13px; color: var(--ink-muted); font-family: var(--mono); }
+
+/* FOOTER */
+footer {
+  position: relative; z-index: 1;
+  max-width: 860px; margin: 0 auto;
+  padding: 2.5rem; border-top: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center;
+}
+footer p { font-family: var(--mono); font-size: 11px; color: var(--ink-muted); }
+.social-links { display: flex; gap: 1.5rem; }
+.social-links a {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--ink-muted); text-decoration: none; transition: color 0.18s;
+}
+.social-links a:hover { color: var(--sage); }
+</style>
+</head>
+<body>
+
+<nav>
+  <!-- Update "your.name" to your actual name or handle -->
+  <a href="#" class="nav-logo">your<span>.</span>name</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#podcast">Podcast</a></li>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#resume">Resume</a></li>
+  </ul>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+     Update: eyebrow tagline, your name, bio text
+     ═══════════════════════════════════════════ -->
+<div class="hero">
+  <div>
+    <p class="hero-eyebrow">// hardware engineer · podcaster · builder</p>
+    <h1>Hi, my name is<br><em>Your Name.</em></h1>
+    <p class="hero-bio">I work at the intersection of hardware and software — designing systems that live in the physical world. When I'm not in the lab, I'm talking to other builders on my tech podcast.</p>
+    <div class="hero-actions">
+      <a href="#about" class="btn-primary">Get to know me</a>
+      <a href="#podcast" class="btn-ghost">Listen to the podcast →</a>
+    </div>
+  </div>
+  <div class="avatar-wrap">
+    <div class="avatar-frame">
+      <!-- PHOTO: replace the span below with:
+           <img src="photo.jpg" alt="Your Name" style="width:100%;height:100%;object-fit:cover;position:relative;z-index:1;">
+           and remove the ::before dashed border rule in the CSS above -->
+      <span class="avatar-initials">YN</span>
+    </div>
+    <span class="avatar-caption">// your photo here</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT
+     Update: bio paragraphs, skill chips
+     ═══════════════════════════════════════════ -->
+<section id="about">
+  <p class="section-label">01 — About</p>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>I'm a hardware engineer with a soft spot for the software side. My work spans circuit design, embedded systems, and the messy, satisfying process of turning an idea into something you can hold in your hands.</p>
+      <p>I've spent years working on everything from sensor arrays and motor controllers to IoT systems that need to be reliable in the real world — not just on a bench. I care a lot about the craft of engineering and even more about the people doing it.</p>
+      <p>I started my tech podcast because I wanted to have the conversations that don't happen at conferences — the honest ones about process, failure, and what it actually takes to ship hardware.</p>
+    </div>
+    <div class="about-sidebar">
+      <div class="sidebar-block">
+        <h4>Hardware</h4>
+        <div class="chip-group">
+          <span class="chip rust">PCB design</span>
+          <span class="chip rust">Embedded C</span>
+          <span class="chip rust">RTOS</span>
+          <span class="chip rust">Sensors</span>
+          <span class="chip rust">Signal processing</span>
+        </div>
+      </div>
+      <div class="sidebar-block">
+        <h4>Software</h4>
+        <div class="chip-group">
+          <span class="chip sage">Python</span>
+          <span class="chip sage">Rust</span>
+          <span class="chip sage">Linux</span>
+          <span class="chip sage">Firmware</span>
+        </div>
+      </div>
+      <div class="sidebar-block">
+        <h4>Tools</h4>
+        <div class="chip-group">
+          <span class="chip">KiCad</span>
+          <span class="chip">Altium</span>
+          <span class="chip">SolidWorks</span>
+          <span class="chip">JTAG</span>
+          <span class="chip">Oscilloscope</span>
+        </div>
+      </div>
+      <div class="sidebar-block">
+        <h4>Based in</h4>
+        <div class="chip-group">
+          <!-- Update your location -->
+          <span class="chip sage">Rhode Island, US</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PROJECTS
+     Update: project title, description, tech chips, href links
+     ═══════════════════════════════════════════ -->
+<section id="projects">
+  <p class="section-label">02 — Projects</p>
+  <div class="projects-grid">
+
+    <a class="project-card" href="#">
+      <p class="project-type">// hardware</p>
+      <h3>Custom motor controller board</h3>
+      <p>A compact 4-layer PCB for brushless DC control with CAN bus integration. Designed for robotics applications that need precise feedback.</p>
+      <div class="project-chips">
+        <span class="p-chip">KiCad</span>
+        <span class="p-chip">STM32</span>
+        <span class="p-chip">CAN bus</span>
+        <span class="p-chip">C</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="#">
+      <p class="project-type">// embedded</p>
+      <h3>Wireless sensor mesh network</h3>
+      <p>Low-power sensor nodes for environmental monitoring, running a custom mesh protocol over 900 MHz with years of battery life.</p>
+      <div class="project-chips">
+        <span class="p-chip">LoRa</span>
+        <span class="p-chip">FreeRTOS</span>
+        <span class="p-chip">C</span>
+        <span class="p-chip">Python</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="#">
+      <p class="project-type">// open source</p>
+      <h3>Firmware flashing CLI tool</h3>
+      <p>A developer tool for streamlining firmware deployment across mixed hardware targets. Used by a small but growing community.</p>
+      <div class="project-chips">
+        <span class="p-chip">Rust</span>
+        <span class="p-chip">OpenOCD</span>
+        <span class="p-chip">JTAG</span>
+      </div>
+    </a>
+
+    <a class="project-card" href="#">
+      <p class="project-type">// experiment</p>
+      <h3>Haptic feedback glove</h3>
+      <p>A wearable prototype with linear resonant actuators mapped to audio input. Built for a research project exploring sensory substitution.</p>
+      <div class="project-chips">
+        <span class="p-chip">LRA drivers</span>
+        <span class="p-chip">IMU</span>
+        <span class="p-chip">BLE</span>
+        <span class="p-chip">Arduino</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PODCAST
+     Update: podcast name, description
+     SPOTIFY: replace the .spotify-box div with your iframe embed.
+       1. Open Spotify → go to your show page
+       2. Click ··· → Share → Embed Podcast
+       3. Copy the <iframe> code and paste it here in place of .spotify-box
+       Recommended: add style="border-radius:10px" to the iframe tag
+     ═══════════════════════════════════════════ -->
+<section id="podcast">
+  <p class="section-label">03 — Podcast</p>
+  <div class="podcast-layout">
+    <div class="podcast-info">
+      <h3>Your Podcast Name</h3>
+      <p>Honest conversations with engineers, founders, and researchers about what they're actually building. No fluff — just the real process behind hardware and tech.</p>
+      <a href="#" class="btn-ghost">All episodes →</a>
+    </div>
+
+    <!-- REPLACE THIS ENTIRE DIV with your Spotify <iframe> embed -->
+    <div class="spotify-box">
+      <div class="sp-logo">
+        <svg width="22" height="22" viewBox="0 0 24 24"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+      </div>
+      <h4>Listen on Spotify</h4>
+      <p>Replace this block with your Spotify embed iframe</p>
+      <span class="sp-embed-note">// paste your show URL here</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     WRITING / BLOG
+     Update: date, title, subtitle, tag, href for each post
+     Add more .blog-item rows as you publish
+     ═══════════════════════════════════════════ -->
+<section id="writing">
+  <p class="section-label">04 — Writing</p>
+  <div class="blog-list">
+
+    <a class="blog-item" href="#">
+      <span class="blog-date">Mar '26</span>
+      <div>
+        <span class="blog-title">Why your PCB silkscreen layer is telling you something important</span>
+        <span class="blog-sub">On the small decisions that reveal the quality of a design.</span>
+      </div>
+      <span class="blog-tag">Hardware</span>
+    </a>
+
+    <a class="blog-item" href="#">
+      <span class="blog-date">Feb '26</span>
+      <div>
+        <span class="blog-title">What firmware engineers can learn from embedded Linux</span>
+        <span class="blog-sub">Bridging the gap between bare-metal and high-level abstraction.</span>
+      </div>
+      <span class="blog-tag">Embedded</span>
+    </a>
+
+    <a class="blog-item" href="#">
+      <span class="blog-date">Jan '26</span>
+      <div>
+        <span class="blog-title">Starting a podcast as an engineer: what I wish I knew</span>
+        <span class="blog-sub">The uncomfortable, unglamorous truth about getting your voice out there.</span>
+      </div>
+      <span class="blog-tag">Reflection</span>
+    </a>
+
+    <a class="blog-item" href="#">
+      <span class="blog-date">Dec '25</span>
+      <div>
+        <span class="blog-title">The art of reading a datasheet</span>
+        <span class="blog-sub">A skill nobody teaches you but everyone needs.</span>
+      </div>
+      <span class="blog-tag">Craft</span>
+    </a>
+
+  </div>
+  <div class="blog-more">
+    <!-- Link this to your blog index page once you have one -->
+    <a href="#" class="btn-ghost">All posts →</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     RESUME
+     Update the href on the button to point to your PDF file.
+     Upload resume.pdf to your repo root and use href="resume.pdf"
+     ═══════════════════════════════════════════ -->
+<section id="resume">
+  <p class="section-label">05 — Resume</p>
+  <div class="resume-card">
+    <div class="resume-left">
+      <h3>Download my resume</h3>
+      <!-- Update the date below whenever you refresh your resume -->
+      <p>// last updated Mar 2026 · PDF · 1 page</p>
+    </div>
+    <a href="resume.pdf" class="btn-primary" download>Download PDF ↓</a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+     Update: your name, social links
+     ═══════════════════════════════════════════ -->
+<footer>
+  <p>// © 2026 your.name</p>
+  <div class="social-links">
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://twitter.com/yourhandle" target="_blank" rel="noopener">Twitter/X</a>
+    <a href="mailto:you@email.com">Email</a>
+  </div>
+</footer>
+
+</body>
+</html>
