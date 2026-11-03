@@ -94,10 +94,10 @@ const SITE = {
     out: ["cherry-picking songs on an album without having listened to it in full"]
     imgs: {
       read: ["images/martyr book.jpg", "images/phparticleimg.png"],
-      listened:["wildgeeseimage.jpg", "gentlewomanalbumcov.jpg"],
-      watched:["theranostrap.png"],
-      doing:["cooking.jpg"],
-      in:["gingertea.jpg"]
+      listened:["images/wildgeeseimage.jpg", "images/gentlewomanalbumcov.jpg"],
+      watched:["images/theranostrap.png"],
+      doing:["images/cooking.jpg"],
+      in:["images/gingertea.jpg"]
       //pinned: ["images/p1.jpg", "images/p2.jpg", "images/p3.jpg"]
     },     
   },
