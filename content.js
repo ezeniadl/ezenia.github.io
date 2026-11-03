@@ -12,8 +12,8 @@ const SITE = {
   city: "MA",
   linkedin: "https://www.linkedin.com/in/ezenia-diaz-lembert/",
   github: "https://github.com/ezeniadl",
-  photo: "ezenia_professional.jpeg",            // e.g. "images/me.jpg"
-  resumePdf: "",        // e.g. "ezenia-resume.pdf"
+  photo: "ezenia_professional.jpeg",            
+  resumePdf: "Ezenia_Diaz-Lembert_Resume.pdf",       
   subtitle: "electrical engineer · power · consumer hardware",
   blurb: "[One or two sentences: I build hardware and firmware where models run on-device, and I'm curious about what happens when people actually use them.]",
 
