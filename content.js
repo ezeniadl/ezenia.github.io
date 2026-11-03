@@ -9,18 +9,18 @@
 const SITE = {
   name: "Ezenia Diaz-Lembert",
   email: "ezenia.diazlembert@gmail.com",
-  city: "MA",
+  city: "massachusetts",
   linkedin: "https://www.linkedin.com/in/ezenia-diaz-lembert/",
   github: "https://github.com/ezeniadl",
   photo: "ezenia_professional.jpeg",            
   resumePdf: "Ezenia_Diaz-Lembert_Resume.pdf",       
-  subtitle: "electrical engineer · power · consumer hardware",
-  blurb: "[One or two sentences: I build hardware and firmware where models run on-device, and I'm curious about what happens when people actually use them.]",
+  subtitle: "electrical engineer · power · consumer hardware · design",
+  blurb: "I'm a builder in consumer hardware, power, and human-centered design projects... who is also curious about all aspects of product design and strategy! Motivated by tech that enables intuitive, effective human-device interaction",
 
   working: [
-    { tag: "building", title: "[Edge AI build on a dev board]", text: "[What it does, what you're measuring, what's next.]" },
-    { tag: "talking to people", title: "[Customer discovery conversations]", text: "[Who you're talking to and what you're trying to learn.]" },
-    { tag: "making", title: "[Podcast episodes]", text: "[Current topic or guest.]" }
+    { tag: "building", title: "Smart earrings for hearing protection", text: "A device that actively montiors ear health via ambient environment loudness detection and exposure history. Earrings that both monitor and house protective aids." },
+    { tag: "talking to people", title: "Physical AI Summit @ MIT", text: "Exploring what's NEXT in edge AI!! Fun" },
+    { tag: "making", title: "the current collective. EPISODE 7!!  ", text: "Advances in Neuromorphic Computing + AI" }
   ],
 
   // Keep this to your 5 most recent. Add one line on what you took away.
