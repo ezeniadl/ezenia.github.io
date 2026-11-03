@@ -14,7 +14,7 @@ const SITE = {
   github: "https://github.com/ezeniadl",
   photo: "ezenia_professional.jpeg",            
   resumePdf: "Ezenia_Diaz-Lembert_Resume.pdf",       
-  subtitle: " power · consumer hardware · design",
+  subtitle: "power · consumer hardware · design",
   blurb: "I'm an electrical engineer with experience in consumer hardware and power... who is also curious about all aspects of product design and strategy! Motivated by tech that enables intuitive, effective human-device interaction",
 
   working: [
