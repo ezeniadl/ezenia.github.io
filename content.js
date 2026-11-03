@@ -8,13 +8,13 @@
    ========================================================== */
 const SITE = {
   name: "Ezenia Diaz-Lembert",
-  email: "[your-email]",
-  city: "[city, state]",
+  email: "ezenia.diazlembert@gmail.com",
+  city: "MA",
   linkedin: "https://www.linkedin.com/in/ezenia-diaz-lembert/",
-  github: "https://github.com/[your-handle]",
+  github: "https://github.com/ezeniadl",
   photo: "",            // e.g. "images/me.jpg"
   resumePdf: "",        // e.g. "ezenia-resume.pdf"
-  subtitle: "electrical engineer · edge AI · consumer hardware",
+  subtitle: "electrical engineer · power · consumer hardware",
   blurb: "[One or two sentences: I build hardware and firmware where models run on-device, and I'm curious about what happens when people actually use them.]",
 
   working: [
