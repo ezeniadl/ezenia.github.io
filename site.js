@@ -11,10 +11,11 @@ document.body.insertAdjacentHTML("afterbegin",`<header><a class="brand" href="${
 document.body.insertAdjacentHTML("beforeend",`<footer><span>© ${S.name}</span><span><a href="${S.linkedin}" target="_blank" rel="noopener">linkedin</a> · <a href="${S.github}" target="_blank" rel="noopener">github</a> · ${S.email}</span></footer>`);
 const wob='<svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2 3 C25 1.5 60 4 98 2 C99.5 30 97 65 98.5 98 C70 99.5 30 97 1.5 99 C3 65 0.5 30 2 3 Z"/></svg>';
 const photo=()=>`<div class="frame">${S.photo?`<img src="${S.photo}" alt="${S.name}">`:`<div class="ph">your photo<br>goes here</div>`}${wob}</div>`;
+const im=x=>x?[].concat(x).map(u=>`<img class="wimg" loading="lazy" src="${u}" alt="">`).join(""):"";
 const rows=a=>a.map(r=>`<div class="row"><div>${r[0]}</div><div>${r[1]}</div></div>`).join("");
 const P={
 home:()=>`${photo()}<div class="txt"><h1>hi, i'm ezenia</h1><div class="sub">${S.subtitle}</div><p>${S.blurb}</p><div class="contact"><a href="mailto:${S.email}">${S.email}</a><a href="${S.linkedin}" target="_blank" rel="noopener">linkedin</a><span>${S.city}</span></div><a class="go" href="${L("working")}">what i'm working on →</a></div>`,
-working:()=>`<h2>what i'm working on</h2>${rows(S.working.map(w=>[`<span class="tag">${w.tag}</span>`,`<h3>${w.title}</h3><p class="m">${w.text}</p>`]))}<h2 class="s">lately</h2>${rows(S.lately.map(l=>[`<span class="lbl">${l.date}</span>`,`<h3>${l.title}</h3><p class="m">${l.text}</p>`]))}`,
+working:()=>`<h2>what i'm working on</h2>${rows(S.working.map(w=>[`<span class="tag">${w.tag}</span>`,`<h3>${w.title}</h3><p class="m">${w.text}</p>${im(w.img)}`]))}<h2 class="s">lately</h2>${rows(S.lately.map(l=>[`<span class="lbl">${l.date}</span>`,`<h3>${l.title}</h3><p class="m">${l.text}</p>${im(l.img)}`]))}`,
 projects:()=>`<h2>projects</h2><div class="cards">${S.projects.map(p=>`<a class="card" href="project.html#${p.slug}"><div class="th">${p.thumb?`<img src="${p.thumb}" alt="">`:""}</div><span class="lbl">${p.year}</span><h3>${p.title}</h3><p class="m">${p.blurb}</p><span class="more">read more →</span></a>`).join("")}</div>`,
 experience:()=>`<h2>experience</h2>${rows(S.experience.map(e=>[`<span class="lbl">${e.when}</span>`,`<h3>${e.role}, ${e.org}</h3><ul class="b">${e.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>`]))}`,
 digest:()=>{const d=S.digest;return `<h2>${d.title}</h2><div class="dg"><div><h3>read:</h3>${li(d.read)}</div><div><h3>listened to:</h3>${li(d.listened)}</div><div><h3>watched:</h3>${li(d.watched)}</div><div><h3>doing:</h3>${li(d.doing)}</div><div><h3>in:</h3>${d.in.join("<br>")}</div><div><h3>out:</h3>${d.out.join("<br>")}</div></div>`},
@@ -46,4 +47,4 @@ function play(i){const e=S.episodes[i];cur=i;t=0;playing=true;stat();if(aud){aud
 function ui(){const r=$("#radio");if(!r)return;r.classList.toggle("on-air",playing);document.querySelectorAll(".ep").forEach((b,i)=>b.classList.toggle("p",i==cur&&playing));
  $("#pp").textContent=playing?"⏸":"▶";$("#led").textContent=playing?"● on air":cur<0?"off air":"paused";if(cur>=0&&$("#np").textContent!="tuning…")$("#np").textContent=S.episodes[cur].t}
 if(document.body.dataset.page=="project"){project();addEventListener("hashchange",project)}
-else{$("#main").innerHTML=Object.keys(P).concat("working").map(k=>`<section class="pg${k=="home"?" home":""}" id="${k}">${P[k]()}</section>`).join("");initPod();addEventListener("hashchange",route);route()}
+else{$("#main").innerHTML=Object.keys(P).map(k=>`<section class="pg${k=="home"?" home":""}" id="${k}">${P[k]()}</section>`).join("");initPod();addEventListener("hashchange",route);route()}
