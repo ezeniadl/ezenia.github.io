@@ -86,12 +86,12 @@ const SITE = {
 
   digest: {
     title: "the november digest",
-    read: ["Martyr! by Kaveh Akbar", "The PHP2Shell Vulnerability Heralds Cybersecurity Hell  - Dina Genkina"],
-    listened: [" podcast -> Wild Geese - Anna Corinne", "music -> Gentlewoman - Cleo Sol"],
+    read: ["Martyr! - Kaveh Akbar", "The PHP2Shell Vulnerability Heralds Cybersecurity Hell - Dina Genkina"],
+    listened: ["podcast -> Wild Geese - Anna Corinne", "music -> Gentlewoman - Cleo Sol"],
     watched: ["The Theranos Trap - Hank Green"],
     doing: ["cooking new recipes", "learning new songs on the guitar"],
     in: ["murakami journaling ", "ginger tea!"],
-    out: ["cherry-picking songs on an album without having listened to it in full"],
+    out: ["cherry-picking songs on an album without having listened to it in full!"],
     imgs: {
       read: ["images/martyrbook.jpg", "images/phparticleimg.png"],
       listened:["images/wildgeeseimage.jpg", "images/gentlewomanalbumcov.jpg"],
@@ -112,23 +112,24 @@ const SITE = {
   ],
 
   skills: [
-    { label: "hardware", text: "[circuit design, embedded firmware, low-power ML]" },
-    { label: "customer + solutions", text: "discovery, acceptance criteria, demos and pilots, explaining tradeoffs to non-engineers" },
-    { label: "tools", text: "[languages, boards, software]" }
+    { label: "hardware", text: "circuit design, edge AI, power system analysis, smart grid modeling, test and validation, integration" },
+    { label: "customer + solutions", text: "discovery, defining technical specifications, business model canvas, strategy" },
+    { label: "tools", text: "SystemVerilog, Vivado, Cadence Virtuoso/Layout, LTspice, MATLAB, Python, Bash, GIS" },
+    { label: "lab experience", text: "Photolithography, Oscilloscope, Waveform Generator, Hardware-in-the-Loop testing" }     
   ],
 
   about: [
     ["NAME:", "Ezenia Diaz-Lembert"],
-    ["BASED IN:", "[city, state]"],
+    ["BASED IN:", "Massachusetts"],
     ["EDUCATION:", "BS Electrical Engineering, Harvard"],
-    ["FOCUS:", "low-power chips, edge AI, consumer hardware"],
-    ["WHO AM I?", "I make intelligent features run on small, real hardware, and I'm just as curious about the people using them. I'm open to solutions engineering roles and have been building toward them through demos and pilot scoping. [edit to your voice]"]
+    ["FOCUS:", "power, edge AI, consumer hardware"],
+    ["WHO AM I?", "While gaining experience in consumer hardware and power system analysis, I've come to deeply enjoy human-centered design, hardware design, and product. I'm curious about how we can keep developing devices that are intuitive, low-power for edge/physical AI applications. I've also found communicating and designing technical concepts with technical/non-technical audiences fun and am open to opportunities in design/solutions engineering!"]
   ],
 
   // Leave src empty to run a demo; add "audio/ep1.mp3" when you have audio.
   episodes: [
-    { t: "[Episode title one]", len: 30, src: "" }, { t: "[Episode title two]", len: 30, src: "" },
-    { t: "[Episode title three]", len: 30, src: "" }, { t: "[Episode title four]", len: 30, src: "" },
-    { t: "[Episode title five]", len: 30, src: "" }, { t: "[Episode title six]", len: 30, src: "" }
+    { t: "Oura Ring, WHOOP, and future of wearable health and wellness tech", len: 30, src: "/audio/Episode1CurrentCollective.mp3" }, { t: "Smart Clothes and Surface EMG for Muscle Fatigue", len: 30, src: "/audio/Episode2CurrentCollective.mp3" },
+    { t: "Can we have sustainable data centers? climate tech, power, and battery-powered ACs", len: 30, src: "/audio/CurrentCollectiveepisode4.mp3" }, { t: "Can AI-Human interaction make you a little less human?", len: 30, src: "/audio/CurrentCollectiveEpisode5.mp3" },
+    { t: "Optimization in the age of AI and the Hunt for Taste", len: 30, src: "/audio/CurrentCollectiveEpisode6.mp3" }, { t: "Check out my other episodes on Spotify/Apple Podcasts!", len: 30, src: "" }
   ]
 };
