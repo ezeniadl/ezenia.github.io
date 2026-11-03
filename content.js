@@ -66,20 +66,32 @@ const SITE = {
   ],
 
   experience: [
-    { when: "[2025 – now]", role: "[Role]", org: "[Company Name]",
-      bullets: ["[Hardware or firmware accomplishment with a measurable result.]", "[Technical discovery: sat with a customer to understand the real need before scoping.]"] },
-    { when: "[2024]", role: "[Earlier Role]", org: "[Company Name]",
-      bullets: ["[Embedded or ML accomplishment.]", "[A customer-facing or discovery moment.]"] }
+    { when: " Jul 2025 – now", role: " Energy Control Center Designer - Power Systems Applications Analyst", org: "AVANGRID",
+      bullets: ["Designed and automated a transmission network model for Central Maine Power’s energy management system.", "Defined technical requirements, strategies, and procedures for transmission and distribution systems.", "Wrote a Python script to synchronize data across the energy management system and distribution one-line diagrams, reducing reconciliation time by 15 hours/month."] },
+    { when: "Jan 2025 - May 2025", role: "Global R&D Consumer Systems and Architecture Co-op ", org: "BOSE Corporation",
+      bullets: ["Built biquad filter models that emulate headset fits and synthesized them for FPGA-in-the-loop testing", "Designed and validated test stimuli across frequencies to characterize filter response.", "Integrated ADI high-speed converters into the FPGA design for real-time testing.", "Validated Simulink model FPGA deployment with an oscilloscope and waveform generator."] }
+    { when: "Jun 2024-Aug 2024", role: "Electrical Engineering Intern", org: "Eaton Corporation",
+      bullets: ["Improved Total Harmonic Distortion computation accuracy from 7th to 39th current harmonics for the PCD-Air Circuit Breaker team by developing C code in IAR Tool.", "Tested real-time THD accuracy using injected test signals from a wave generator and oscilloscope FFT projections."] }
+    { when: "Sep 2023-Jan 2024 ", role: "Electrical Engineering Intern", org: "BAE Systems",
+      bullets: ["Conducted analog circuit design and analysis, simulations, and layout for the Mixed Signal Integrated Circuit team.", "Ran Monte Carlo simulations for phase-locked loop systems."] }  
+    { when: "Aug 2023-Sep 2023 ", role: "Electrical Engineering Intern", org: "Halo Braid",
+      bullets: ["Developed a motor control system using an Arduino for an automatic hair braiding system for black hair.", "Leveraged encoders and mechanical rotation device parameters to optimize braiding speed, improving efficiency by 50%."] }  
+    { when: "May 2022-Aug 2022", role: "Summer Intern", org: "United States DOE Office of Technology Transitions",
+      bullets: ["Led customer discovery interviews, researched a $3.26 billion market, and built a business model canvas to produce a 4-year commercialization plan for a Sandia National Laboratory technology."] }  
+   { when: "Jul 2021 ", role: "Strategy Summer Intern", org: "Massachusetts Executive Office of Technology Services and Security",
+      bullets: ["Conducted market and technology research to collaborate on technology accessibility projects for the Massachusetts Department of Housing and Development and the Commonwealth’s Peace Officer Standards and Training Commission."] }  
+    { when: "Sep 2020-Dec 2023", role: "Corporate Liasion Officer", org: "Harvard SEAS Society of Hispanic Professional Engineers",
+      bullets: ["Managed communication with corporate partners, including Jane Street, applied to grants, and organized STEM talks and Problem Set nights for Latinx students"] }  
   ],
 
   digest: {
-    title: "the [month] digest",
-    read: ["[book or article]", "[book or article]"],
-    listened: ["[podcast or album]", "[podcast or album]"],
-    watched: ["[show or film]", "[show or film]"],
-    doing: ["[something you're into]", "[something you're into]"],
-    in: ["[a trend you like]", "[another]"],
-    out: ["[a trend you're over]", "[another]"]
+    title: "the november digest",
+    read: ["Martyr! by Kaveh Akbar", "Love - Toni Morrison (current read), "The PHP2Shell Vulnerability Heralds Cybersecurity Hell  - Dina Genkina"],
+    listened: [" podcast -> Wild Geese - Anna Corinne", "music -> Gentlewoman - Cleo Sol"],
+    watched: ["The Theranos Trap - Hank Green"],
+    doing: ["cooking new recipes", "learning new songs on the guitar"],
+    in: ["Murakami journaling ", "in-person coffee chats (when possible... of course)"],
+    out: ["vitamin D deficiency, mission is to get more sun", "forced aesthetics"]
   },
 
   // "off the clock" page
