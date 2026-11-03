@@ -91,7 +91,7 @@ const SITE = {
     watched: ["The Theranos Trap - Hank Green"],
     doing: ["cooking new recipes", "learning new songs on the guitar"],
     in: ["murakami journaling ", "ginger tea!"],
-    out: ["cherry-picking songs on an album without having listened to it in full"]
+    out: ["cherry-picking songs on an album without having listened to it in full"],
     imgs: {
       read: ["images/martyr book.jpg", "images/phparticleimg.png"],
       listened:["images/wildgeeseimage.jpg", "images/gentlewomanalbumcov.jpg"],
