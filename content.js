@@ -18,31 +18,31 @@ const SITE = {
   blurb: "I'm a builder in consumer hardware, power, and human-centered design projects... who is also curious about all aspects of product design and strategy! Motivated by tech that enables intuitive, effective human-device interaction",
 
   working: [
-    { tag: "building", title: "Smart earrings for hearing protection", text: "A device that actively montiors ear health via ambient environment loudness detection and exposure history. Earrings that both monitor and house protective aids." },
+    { tag: "building", title: "Smart earrings for hearing protection", text: "A device that actively montiors ear health via ambient environment loudness detection, exposure history, and edge AI applications. Earrings that both monitor and house protective aids." },
     { tag: "talking to people", title: "Physical AI Summit @ MIT", text: "Exploring what's NEXT in edge AI!! Fun" },
     { tag: "making", title: "the current collective. EPISODE 7!!  ", text: "Advances in Neuromorphic Computing + AI" }
   ],
 
   // Keep this to your 5 most recent. Add one line on what you took away.
   lately: [
-    { date: "[Nov 2026]", title: "[Conference or event name]", text: "[One line: what you saw or learned.]" },
-    { date: "[Oct 2026]", title: "[Conference or event name]", text: "[One line: what you saw or learned.]" }
+    { date: "[Nov 2026]", title: "SWE Conference 2026!", text: "Upcoming! I'm excited to connect with other women in engineering" },
+    { date: "[Oct 2026]", title: "Physical AI Summit @ MIT - Insights in Action", text: "Spent the whole day learning about investments and futures in Physical AI, and attended an AMD Workshop to build a gesture-controlled robotic arm trained on AMD GPUs. My main musings: multi-agents are the big next thing. Agentic AI is a main focus. Hardware used to be HARD, but now it's up for the next wave of investment as models are power hungry/the focus is on compute. Data is the moat sometimes." }
   ],
 
   // To add a project: copy one block, give it a new unique "slug" (lowercase, dashes).
   projects: [
     {
-      slug: "pilot-scoping", title: "Pilot scoping", year: "[2025]", thumb: "",
-      blurb: "[A customer conversation turned into a measured demo.]",
-      tags: ["customer discovery", "demo"],
+      slug: "Lit Light Show", title: "'Lit Light Show' - Music-Enabled Light Show for Interactive, Responsive Music Decoration", year: "[2020]", thumb: "",
+      blurb: "Final Project for ES50: Introduction to Electrical Engineering",
+      tags: ["electrical engineering", "circuit design", "audio", "design"],
       sections: [
-        { h: "the problem", t: "[What the customer needed.]" },
-        { h: "what i built", t: "[The demo, the hardware, the model.]" },
-        { h: "results", t: "[What you measured and what happened next.]" }
+        { h: "the problem", t: "After arriving on campus freshman year, my lab partner and I realized that we, along with other students, loved to decorate our walls with photos of our favorite albums. We decided to make them a bit more interactive with our final project." },
+        { h: "what i built", t: "We designed an audio amplifier that would take pre-loaded audio files loaded onto an arduino and play them out on a speaker. we installed a mic that would track changes in the music to control peripheral lights added to the frame" },
+        { h: "results", t: "Check out our creation in our final video! We believe electronics is a great tool for further expressing creativity and we had a lot of fun working on this project. In the video, we walk through our circuit and include a skit to show how users might engage with the device in real life :)" }
       ],
       media: [
-        // { type: "image", src: "images/pilot-1.jpg", caption: "Bench setup" },
-        // { type: "video", url: "https://www.youtube.com/watch?v=XXXXXXXXXXX" }
+        { type: "image", src: "litlightshowcircuit.png", caption: "Circuit setup" },
+        { type: "video", url: "https://youtu.be/z3vquxfEAHM" }
       ]
     },
     {
