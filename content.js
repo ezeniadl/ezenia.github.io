@@ -32,7 +32,7 @@ const SITE = {
   // To add a project: copy one block, give it a new unique "slug" (lowercase, dashes).
   projects: [
     {
-      slug: "Lit Light Show", title: "'Lit Light Show' - Music-Enabled Light Show for Interactive, Responsive Music Decoration", year: "[2020]", thumb: "",
+      slug: "Lit Light Show", title: "'Lit Light Show' - Music-Enabled Light Show for Interactive, Responsive Music Decoration", year: "2020", thumb: "litlightshowcircuit.png",
       blurb: "Final Project for ES50: Introduction to Electrical Engineering",
       tags: ["electrical engineering", "circuit design", "audio", "design"],
       sections: [
