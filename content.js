@@ -18,8 +18,8 @@ const SITE = {
   blurb: "I'm an electrical engineer with experience in consumer hardware and power... who is also curious about all aspects of product design and strategy! Motivated by tech that enables intuitive, effective human-device interaction",
 
   working: [
-    { tag: "building", title: "Smart earrings for hearing protection", text: "A device that actively montiors ear health via ambient environment loudness detection, exposure history, and edge AI applications. Earrings that both monitor and house protective aids." },
-    { tag: "talking to people", title: "Physical AI Summit @ MIT", text: "Exploring what's NEXT in edge AI!! Fun" },
+    { tag: "building", title: "Smart earrings for hearing protection", text: "A device that actively monitors ear health via ambient environment loudness detection, exposure history, and edge AI applications. Earrings that both monitor and house protective aids." },
+    { tag: "talking to people", title: "Physical AI Summit @ MIT", text: "Exploring what's NEXT in edge AI!!" },
     { tag: "making", title: "the current collective. EPISODE 7!!  ", text: "Advances in Neuromorphic Computing + AI" }
   ],
 
