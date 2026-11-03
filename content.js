@@ -12,7 +12,7 @@ const SITE = {
   city: "massachusetts",
   linkedin: "https://www.linkedin.com/in/ezenia-diaz-lembert/",
   github: "https://github.com/ezeniadl",
-  photo: "ezenia_professional.jpeg",            
+  photo: "images/ezenia_professional.jpeg",            
   resumePdf: "Ezenia_Diaz-Lembert_Resume.pdf",       
   subtitle: "power · consumer hardware · design",
   blurb: "I'm an electrical engineer with experience in consumer hardware and power... who is also curious about all aspects of product design and strategy! Motivated by tech that enables intuitive, effective human-device interaction",
@@ -32,7 +32,7 @@ const SITE = {
   // To add a project: copy one block, give it a new unique "slug" (lowercase, dashes).
   projects: [
     {
-      slug: "Lit Light Show", title: "'Lit Light Show' - Music-Enabled Light Show for Interactive, Responsive Music Decoration", year: "2020", thumb: "litlightshowcircuit.png",
+      slug: "Lit Light Show", title: "'Lit Light Show' - Music-Enabled Light Show for Interactive, Responsive Music Decoration", year: "2020", thumb: "images/litlightshowcircuit.png",
       blurb: "Final Project for ES50: Introduction to Electrical Engineering",
       tags: ["electrical engineering", "circuit design", "audio", "design"],
       sections: [
@@ -41,7 +41,7 @@ const SITE = {
         { h: "results", t: "Check out our creation in our final video! We believe electronics is a great tool for further expressing creativity and we had a lot of fun working on this project. In the video, we walk through our circuit and include a skit to show how users might engage with the device in real life :)" }
       ],
       media: [
-        { type: "image", src: "litlightshowcircuit.png", caption: "Circuit setup" },
+        { type: "image", src: "images/litlightshowcircuit.png", caption: "Circuit setup" },
         { type: "video", url: "https://youtu.be/z3vquxfEAHM" }
       ]
     },
