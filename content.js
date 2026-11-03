@@ -93,7 +93,7 @@ const SITE = {
     in: ["murakami journaling ", "ginger tea!"],
     out: ["cherry-picking songs on an album without having listened to it in full"],
     imgs: {
-      read: ["images/martyr book.jpg", "images/phparticleimg.png"],
+      read: ["images/martyrbook.jpg", "images/phparticleimg.png"],
       listened:["images/wildgeeseimage.jpg", "images/gentlewomanalbumcov.jpg"],
       watched:["images/theranostrap.png"],
       doing:["images/cooking.jpg"],
