@@ -25,8 +25,8 @@ const SITE = {
 
   // Keep this to your 5 most recent. Add one line on what you took away.
   lately: [
-    { date: "[Nov 2026]", title: "SWE Conference 2026!", text: "Upcoming! I'm excited to connect with other women in engineering" },
-    { date: "[Oct 2026]", title: "Physical AI Summit @ MIT - Insights in Action", text: "Spent the whole day learning about investments and futures in Physical AI, and attended an AMD Workshop to build a gesture-controlled robotic arm trained on AMD GPUs. My main musings: multi-agents are the big next thing. Agentic AI is a main focus. Hardware used to be HARD, but now it's up for the next wave of investment as models are power hungry/the focus is on compute. Data is the moat sometimes." }
+    { date: "Nov 2026", title: "SWE Conference 2026!", text: "Upcoming! I'm excited to connect with other women in engineering" },
+    { date: "Oct 2026", title: "Physical AI Summit @ MIT - Insights in Action", text: "Spent the whole day learning about investments and futures in Physical AI, and attended an AMD Workshop to build a gesture-controlled robotic arm trained on AMD GPUs. My main musings: multi-agents are the big next thing. Agentic AI is a main focus. Hardware used to be HARD, but now it's up for the next wave of investment as models are power hungry/the focus is on compute. Data is the moat sometimes." }
   ],
 
   // To add a project: copy one block, give it a new unique "slug" (lowercase, dashes).
