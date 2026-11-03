@@ -14,8 +14,8 @@ const SITE = {
   github: "https://github.com/ezeniadl",
   photo: "ezenia_professional.jpeg",            
   resumePdf: "Ezenia_Diaz-Lembert_Resume.pdf",       
-  subtitle: "electrical engineer · power · consumer hardware · design",
-  blurb: "I'm a builder in consumer hardware, power, and human-centered design projects... who is also curious about all aspects of product design and strategy! Motivated by tech that enables intuitive, effective human-device interaction",
+  subtitle: " power · consumer hardware · design",
+  blurb: "I'm an electrical engineer with experience in consumer hardware and power... who is also curious about all aspects of product design and strategy! Motivated by tech that enables intuitive, effective human-device interaction",
 
   working: [
     { tag: "building", title: "Smart earrings for hearing protection", text: "A device that actively montiors ear health via ambient environment loudness detection, exposure history, and edge AI applications. Earrings that both monitor and house protective aids." },
