@@ -60,7 +60,7 @@ const SITE = {
     },
      
     {
-      slug: "boat-controller", title: "Control system to prevent boat accidents", year: "2021", thumb: "/images/boatpropeller.jpg",
+      slug: "boat-controller", title: "PID Control System for a Single-Propeller Boat", year: "2021", thumb: "images/boatpropeller.jpg",
       blurb: "Group project for ES155: Systems and Control",
       tags: ["control", "PID"],
       sections: [
