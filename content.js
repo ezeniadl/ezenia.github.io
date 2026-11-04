@@ -19,7 +19,7 @@ const SITE = {
 
   working: [
     { tag: "building", title: "Smart earrings for hearing protection", text: "A device that actively monitors ear health via ambient environment loudness detection, exposure history, and edge AI applications. Earrings that both monitor and house protective aids." },
-    { tag: "talking to people", title: "Physical AI Summit @ MIT", text: "Exploring what's NEXT in edge AI!!" },
+    { tag: "learning", title: "Physical AI Summit @ MIT", text: "Exploring what's next in edge AI. Main takeaways: robotics is a hot topic again, there's a BIG shift to multi-agent systems, more interest in hardware and pathways for development nowadays!" },
     { tag: "making", title: "the current collective. EPISODE 7!!  ", text: "Advances in Neuromorphic Computing + AI" }
   ],
 
@@ -80,7 +80,7 @@ const SITE = {
       bullets: ["Led customer discovery interviews, researched a $3.26 billion market, and built a business model canvas to produce a 4-year commercialization plan for a Sandia National Laboratory technology."] }, 
    { when: "Jul 2021 ", role: "Strategy Summer Intern", org: " Massachusetts Executive Office of Technology Services and Security ",
       bullets: ["Conducted market and technology research to collaborate on technology accessibility projects for the Massachusetts Department of Housing and Development and the Commonwealth’s Peace Officer Standards and Training Commission."] },  
-    { when: "Sep 2020-Dec 2023", role: "Corporate Liasion Officer", org: " Harvard SEAS Society of Hispanic Professional Engineers ",
+    { when: "Sep 2020-Dec 2023", role: "Corporate Liason Officer", org: " Harvard SEAS Society of Hispanic Professional Engineers ",
       bullets: ["Managed communication with corporate partners, including Jane Street, applied to grants, and organized STEM talks and Problem Set nights for Latinx students"] }  
   ],
 
@@ -104,25 +104,24 @@ const SITE = {
 
   // "off the clock" page
   fun: [
-    { title: "acapella", text: "[Your group, how long you've sung, favorite performance.]",
-      media: [ // { type: "video", url: "https://www.youtube.com/watch?v=XXXXXXXXXXX" }
-      ] },
-    { title: "animal shelter volunteering", text: "[Which shelter, what you do, why it matters to you.]", media: [] },
-    { title: "Harvard Society of Hispanic Engineers chapter", text: "[Your role, what the chapter did, a highlight.]", media: [] }
+    { title: "acapella", text: "I was a member of the Harvard-Radcliffe Veritones from sophomore year until my senior year. I sang mezzo/alto, and was social chair for some time! I participated in the 2023 ICCAs competition with my group and we won first place at quarterfinals! Here are some videos of our performances",
+      media: [ { type: "video", url: "https://youtu.be/YKqD17HAAtU" }, { type: "video", url: "https://youtu.be/3KJvQMnuYQA" }] },
+    { title: "animal shelter volunteering", text: "I've volunteered for a couple of months at the Kennebec Valley Humane Society. I helped with laundry, cleaning, and dog-walking :) I was just interested in seeing how I can help around my community", media: [{ type: "image", src: "images/kvhs.jpeg"}] },
+    { title: "Harvard Society of Hispanic Engineers chapter", text: "I was involved in Harvard's SHPE Chapter from my freshman until junior year on campus, and was Corporate Liason for a term! I also helped plan and lead student events, from problem set nights to makerspace events", media: [{ type: "image", src: "images/shpe.png" }] }
   ],
 
   skills: [
     { label: "hardware", text: "circuit design, edge AI, power system analysis, smart grid modeling, test and validation, integration" },
     { label: "customer + solutions", text: "discovery, defining technical specifications, business model canvas, strategy" },
     { label: "tools", text: "SystemVerilog, Vivado, Cadence Virtuoso/Layout, LTspice, MATLAB, Python, Bash, GIS" },
-    { label: "lab experience", text: "Photolithography, Oscilloscope, Waveform Generator, Hardware-in-the-Loop testing" }     
+    { label: "lab experience", text: "photolithography, oscilloscope, waveform generator, hardware-in-the-loop testing" }     
   ],
 
   about: [
     ["NAME:", "Ezenia Diaz-Lembert"],
     ["BASED IN:", "Massachusetts"],
     ["EDUCATION:", "BS Electrical Engineering, Harvard"],
-    ["FOCUS:", "power, edge AI, consumer hardware"],
+    ["FOCUS:", "Power, Edge AI, Consumer Hardware"],
     ["WHO AM I?", "While gaining experience in consumer hardware and power system analysis, I've come to deeply enjoy human-centered design, hardware design, and product. I'm curious about how we can keep developing devices that are intuitive, low-power for edge/physical AI applications. I've also found communicating and designing technical concepts with technical/non-technical audiences fun and am open to opportunities in design/solutions engineering!"]
   ],
 
