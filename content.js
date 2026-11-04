@@ -95,7 +95,7 @@ const SITE = {
         { type: "image", src: "images/fabmaskssensor.png", caption: "sketches for masks used during fabrication"},
         { type: "image", src: "images/measurementsensor.png", caption: "plot of capacitance vs applied pressure/weight"},
         { type: "image", src: "images/simsensor.png", caption: "sensor simulation in COMSOL Multiphysics"},
-        { type: "image", src: "images/scrubbingout.png", caption: "picture i took right before i scrubbed out of the cleanroom"},
+        { type: "image", src: "images/scrubbingout.JPG", caption: "picture i took right before i scrubbed out of the cleanroom"},
         { type: "video", url: "https://youtu.be/_DMxMJUS3MM", caption:"a video we took while testing! part of the wafer had broken during transit but our sensor still worked :)"}
       ]
     },     
