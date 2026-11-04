@@ -128,6 +128,6 @@ const SITE = {
   episodes: [
     { t: "Oura Ring, WHOOP, and future of wearable health and wellness tech", len: 30, src: "/audio/episode1clip.mp3" }, { t: "Smart Clothes and Surface EMG for Muscle Fatigue", len: 30, src: "/audio/episode2clip.mp3" },
     { t: "How to talk about AI like a normal person", len: 30, src: "/audio/episode3clip.mp3" }, { t: "Can we have sustainable data centers? climate tech, power, and battery-powered ACs", len: 30, src: "/audio/episode4clip.mp3" },
-    { t: "Can AI-Human interaction make you a little less human?", len: 30, src: "/audio/episode5clip.mp3" }, { t: "Optimization in the age of AI and the Hunt for Taste", len: 30, src: "episode6clip.mp3" }
+    { t: "Can AI-Human interaction make you a little less human?", len: 30, src: "/audio/episode5clip.mp3" }, { t: "Optimization in the age of AI and the Hunt for Taste", len: 30, src: "/audio/episode6clip.mp3" }
   ]
 };
