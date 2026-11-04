@@ -77,7 +77,7 @@ const SITE = {
              ]
     },
      
-    /*{
+    {
       slug: "edge-ai-board", title: "[Edge AI on a board]", year: "[2025]", thumb: "",
       blurb: "[Model, board, power and latency numbers in one line.]",
       tags: ["firmware", "low-power ML"],
@@ -94,7 +94,7 @@ const SITE = {
       tags: ["[tag]"],
       sections: [{ h: "overview", t: "[...]" }],
       media: []
-    }*/
+    }
   ],
 
   experience: [
