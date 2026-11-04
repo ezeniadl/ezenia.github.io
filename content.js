@@ -78,8 +78,29 @@ const SITE = {
         { type: "video", url: "https://youtu.be/h8tMZ2RfaDw"}
       ]
     },
-     
+
     {
+      slug: "fab-sensor", title: "A Cantilever Pressure Sensor for Wearables - Measurement of Forces Applied on the Fingertips", year: "2022", thumb: "images/fabsensor.png",
+      blurb: "Group project for ES176: Introduction to Microelectromechanical Systems",
+      tags: ["fabrication", "MEMS", "photolithography", "COMSOL Multiphysics", "design", "cleanroom"],
+      sections: [
+        { h: "the problem", t: "Tactile sensors serve a broad range of applications, from artificial intelligence and virtual reality projects, to simulating modern expensive devices. A particular area of application is explored in this project:musical instruments. Most equipment such as pianos and musical instrument digital instrument (MIDI) board can often cost upwards of a couple hundred dollars and require decent training and knowledge from the common consumer. In this paper, we fabricate a capacitive pressure sensor made to serve as a tactile sensor on a glove that can be programmed and serve as a “MIDI glove”, allowing users of all experience levels to produce music in a cost-effective manner."},
+        { h: "what we built", t:"We designined and fabricated a capacitive pressure sensor on a silicon on insulator (SOI) wafer, maximizing the capacitance by both decreasing the distance between two conductive plates and using a dielectric gel with a greater dielectric constant than air."},
+        { h: "results", t: "Resulting data indicates that the successful MEMS device provided an intrinsic capacitance of approximately 7.75pF, and had increased in capacitance given some pressures ranging from 0.03N to 0.07N. we successfully designed and fabricated a dialectric capacitive pressure sensor. Our design was tailored for VR/AR and musical applications, specifically for detecting touch. Our device was successfully tested and showed a measurable change in capacitance proportional to the amount of pressure applied."},
+        { h: "limitations + further development", t:"Primarily due to time and material constraints, our device has a few notable limitations. First, the capacitor we created has a very low level of capacitance, meaning that you need bulky and expensive equipment to read it. This is not ideal for our application of wearable sensors. Second, the fabrication approach described above has limitations for the application of a glove-based pressure sensor. While the capacitor itself could fit on the tip of a finger, the electrodes are quite large (for practical testing purposes) and the overall base plate is too rigid and will limit the user's range of motion. Third, the base plate and the wafer are not securely attached to one another, and this could lead to capacitor drift over time, with the capacitor plates misaligning or moving closer together, changing the electrical properties. This is a particular relevance given the application of pushing on surfaces constantly. In the future, we would hope to improve the reliability and durability of our capacitive sensor through a more intensive testing regimen, applying significantly larger weights. While our capacitor was designed to distribute pressure not just on the weakest, thinnest membranous part of the wafer (using the damped design), we did not test this fully since we only had one working sensor and wanted to avoid damaging it. We would also further miniaturize the capacitor and etch many right next to one another. Further, we would print the base plate electrodes onto a soft material like fabric so that the base plate can be the glove itself, with small silicon wafers attached to it like pixels. This would allow both a high range of motion for the user as well as a high resolution of tactility. Lastly, we would further develop our original idea of using piezoelectric materials to apply small amounts of pressure to the skin of the user. A large number of these "pressure pixels," combined with our existing "sensation pixels," would be a major step forward in the realism and potential of virtual and augmented reality applications."}
+      ],
+       
+      media: [
+        { type: "image", src: "images/testingsensor.png", caption: "measuring device capacitance with a capacitance meter" },
+        { type: "image", src: "images/fabmaskssensor.png", caption: "sketches for masks used during fabrication"},
+        { type: "image", src: "images/measurementsensor.png", caption: "plot of capacitance vs applied pressure/weight"},
+        { type: "image", src: "images/simsensor.png", caption: "sensor simulation in COMSOL Multiphysics"},
+        { type: "image", src: "images/scrubbingout.png", caption: "picture i took right before i scrubbed out of the cleanroom"},
+        { type: "video", url: "https://youtu.be/_DMxMJUS3MM", caption:"a video we took while testing! part of the wafer had broken during transit but our sensor still worked :)"}
+      ]
+    },     
+     
+    /*{
       slug: "edge-ai-board", title: "[Edge AI on a board]", year: "[2025]", thumb: "",
       blurb: "[Model, board, power and latency numbers in one line.]",
       tags: ["firmware", "low-power ML"],
@@ -96,7 +117,7 @@ const SITE = {
       tags: ["[tag]"],
       sections: [{ h: "overview", t: "[...]" }],
       media: []
-    }
+    }*/
   ],
 
   experience: [
