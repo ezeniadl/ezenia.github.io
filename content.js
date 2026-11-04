@@ -97,8 +97,8 @@ const SITE = {
         { type: "image", src: "images/simsensor.png", caption: "sensor simulation in COMSOL Multiphysics"},
         { type: "image", src: "images/scrubbingout.JPG", caption: "picture i took right before i scrubbed out of the cleanroom"},
         { type: "video", url: "https://youtu.be/_DMxMJUS3MM", caption:"a video we took while testing! part of the wafer had broken during transit but our sensor still worked :)"}
-      ]*/
-    },     
+      ]
+    }, */    
      
     {
       slug: "edge-ai-board", title: "[Edge AI on a board]", year: "[2025]", thumb: "",
