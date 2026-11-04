@@ -125,10 +125,9 @@ const SITE = {
     ["WHO AM I?", "While gaining experience in consumer hardware and power system analysis, I've come to deeply enjoy human-centered design, hardware design, and product. I'm curious about how we can keep developing devices that are intuitive, low-power for edge/physical AI applications. I've also found communicating and designing technical concepts with technical/non-technical audiences fun and am open to opportunities in design/solutions engineering!"]
   ],
 
-  // Leave src empty to run a demo; add "audio/ep1.mp3" when you have audio.
   episodes: [
-    { t: "Oura Ring, WHOOP, and future of wearable health and wellness tech", len: 30, src: "/audio/Episode1CurrentCollective.mp3" }, { t: "Smart Clothes and Surface EMG for Muscle Fatigue", len: 30, src: "/audio/Episode2CurrentCollective.mp3" },
-    { t: "Can we have sustainable data centers? climate tech, power, and battery-powered ACs", len: 30, src: "/audio/CurrentCollectiveepisode4.mp3" }, { t: "Can AI-Human interaction make you a little less human?", len: 30, src: "/audio/CurrentCollectiveEpisode5.mp3" },
-    { t: "Optimization in the age of AI and the Hunt for Taste", len: 30, src: "/audio/CurrentCollectiveEpisode6.mp3" }, { t: "Check out my other episodes on Spotify/Apple Podcasts!", len: 30, src: "" }
+    { t: "Oura Ring, WHOOP, and future of wearable health and wellness tech", len: 30, src: "/audio/episode1clip.mp3" }, { t: "Smart Clothes and Surface EMG for Muscle Fatigue", len: 30, src: "/audio/episode2clip.mp3" },
+    { t: "How to talk about AI like a normal person", len: 30, src: "/audio/episode3clip.mp3" }, { t: "Can we have sustainable data centers? climate tech, power, and battery-powered ACs", len: 30, src: "/audio/episode4clip.mp3" },
+    { t: "Can AI-Human interaction make you a little less human?", len: 30, src: "/audio/episode5clip.mp3" }, { t: "Optimization in the age of AI and the Hunt for Taste", len: 30, src: "episode6clip.mp3" }
   ]
 };
