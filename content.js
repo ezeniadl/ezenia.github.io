@@ -16,8 +16,18 @@ const SITE = {
   resumePdf: "Ezenia_Diaz-Lembert_Resume.pdf",       
   subtitle: "power · consumer hardware · design",
   blurb: "I'm an electrical engineer with experience in consumer hardware and power... who is also curious about all aspects of product design and strategy! Motivated by tech that enables intuitive, effective human-device interaction",
-
-  working: [
+   
+   podcast: {
+     name: "the current collective.",
+     img: "images/currentcollective.png",
+     blurb: "I believe that we can talk through educational barriers to innovative tech research and news. If you want to learn about how some of the tech around us works, what product design looks like, socio-cultural implications of new tech, and what to look forward to, I think you're in the right space. I have some one minute clips here, but for extended cuts check the podcast out on Spotify and Apple Podcasts!",
+     links: [
+       { label: "spotify", url: "https://open.spotify.com/show/7tuaUfzz82r7xP9mCjCnpa?si=5cac10576ac64ba4" },
+       { label: "apple podcasts", url: "https://podcasts.apple.com/us/podcast/the-current-collective/id6788908265" }
+     ]
+   },  
+   
+   working: [
     { tag: "building", title: "Smart earrings for hearing protection", text: "A device that actively monitors ear health via ambient environment loudness detection, exposure history, and edge AI applications. Earrings that both monitor and house protective aids." },
     { tag: "learning", title: "Physical AI Summit @ MIT", text: "Exploring what's next in edge AI. Main takeaways: robotics is a hot topic again, there's a BIG shift to multi-agent systems, more interest in hardware and pathways for development nowadays!" },
     { tag: "making", title: "the current collective. EPISODE 7!!  ", text: "Advances in Neuromorphic Computing + AI" }
