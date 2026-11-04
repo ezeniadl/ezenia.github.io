@@ -27,7 +27,7 @@ const SITE = {
      ]
    },  
    awards: [
-     { when: "2023", title: "Electrical Engineering Community Building MVP Award", org: "Electrical Engineering Undergraduate Department @ Harvard ", text: "Recognized by the Harvard School of Engineering and Applied Sciences Undergraduate Electrical Engineering Department for organizing community events such as Women in EE Luncheons to help promote engagement and collaboration." },
+     { when: "2023", title: "Electrical Engineering Community Building MVP Award", text: "Recognized by the Harvard School of Engineering and Applied Sciences Undergraduate Electrical Engineering Department for organizing community events such as Women in EE Luncheons to help promote engagement and collaboration." },
      { when: "2024", title: "Hastings Award for Musical Performance ", text:"Recognized by the Pforzheimer House Committee at Harvard College for musical performance activities in The Harvard-Radcliffe Veritones and winning first place at the International Championship of Collegiate A Cappella 2023 quarterfinals competition."}
    ],   
    working: [
@@ -128,7 +128,7 @@ const SITE = {
     { label: "customer + solutions", text: "discovery, defining technical specifications, business model canvas, strategy" },
     { label: "tools", text: "SystemVerilog, Vivado, Cadence Virtuoso/Layout, LTspice, MATLAB, Python, Bash, GIS" },
     { label: "lab experience", text: "photolithography, oscilloscope, waveform generator, hardware-in-the-loop testing" },   
-    { label: "languages", text: "English (native), Spanish (native)" }
+    { label: "languages", text: "english (native), spanish (native)" }
   ],
 
   about: [
