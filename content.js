@@ -78,7 +78,7 @@ const SITE = {
         { type: "video", url: "https://youtu.be/h8tMZ2RfaDw"}
       ]
     },
-/*
+    /*
     {
       slug: "fab-sensor", title: "A Cantilever Pressure Sensor for Wearables - Measurement of Forces Applied on the Fingertips", year: "2022", thumb: "images/fabsensor.png",
       blurb: "Group project for ES176: Introduction to Microelectromechanical Systems",
