@@ -76,8 +76,7 @@ const SITE = {
         { type: "image", src: "images/es155projectwork2.jpg"},
         { type: "image", src: "images/es155projectwork3.jpg"},
         { type: "image", src: "images/es155projectwork4.jpg"},
-        { type: "video", src: "audio/ES155FinalProjectSlide7.mp4"}
-         
+        { type: "video", url: "https://youtu.be/h8tMZ2RfaDw"}
       ]
     },
      
