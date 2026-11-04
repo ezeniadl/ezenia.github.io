@@ -45,7 +45,7 @@ const SITE = {
   // To add a project: copy one block, give it a new unique "slug" (lowercase, dashes).
   projects: [
     {
-      slug: "Lit Light Show", title: "Lit Light Show - Music-Enabled Light Show for Interactive, Responsive Music Decoration", year: "2021", thumb: "images/litlightshowcircuit.png",
+      slug: "lit-light-show", title: "Lit Light Show - Music-Enabled Light Show for Interactive, Responsive Music Decoration", year: "2021", thumb: "images/litlightshowcircuit.png",
       blurb: "Final Project for ES50: Introduction to Electrical Engineering",
       tags: ["electrical engineering", "circuit design", "audio", "design"],
       sections: [
@@ -60,7 +60,7 @@ const SITE = {
     },
      
     {
-      slug: "PID controller for a single-propeller boat", title: "Control system to prevent boat accidents", year: "2021", thumb: "/images/boatpropeller.jpg",
+      slug: "boat-controller", title: "Control system to prevent boat accidents", year: "2021", thumb: "/images/boatpropeller.jpg",
       blurb: "Group project for ES155: Systems and Control",
       tags: ["control", "PID"],
       sections: [
