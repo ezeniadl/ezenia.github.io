@@ -1,11 +1,3 @@
-/* ==========================================================
-   EDIT YOUR SITE HERE. This is the only file you need to touch
-   for text, links, images and videos.
-   - Keep the quotes "like this" and the commas between items.
-   - Images: put files in the images/ folder, then use "images/name.jpg".
-   - Videos: paste a YouTube or Vimeo link (unlisted is fine).
-   - Audio: put files in the audio/ folder, then use "audio/name.mp3".
-   ========================================================== */
 const SITE = {
   name: "Ezenia Diaz-Lembert",
   email: "ezenia.diazlembert@gmail.com",
